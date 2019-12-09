@@ -33,19 +33,19 @@ namespace dotnet_regex_benchmarks
         }
 
         [Benchmark]
-        public void RegexSingleMatch()
+        public void _1()
         {
             new Regex("[A-Za-z0-9]").Match("abc");
         }
 
         [Benchmark]
-        public void RegexSingleMatchCompiled()
+        public void _1Compiled()
         {
             new Regex("[A-Za-z0-9]", RegexOptions.Compiled).Match("abc");
         }
 
         [Benchmark]
-        public void Regex1000Matches()
+        public void _1k()
         {
             var regex = new Regex("[A-Za-z0-9]");
 
@@ -56,7 +56,7 @@ namespace dotnet_regex_benchmarks
         }
 
         [Benchmark]
-        public void Regex1000MatchesCompiled()
+        public void _1kCompiled()
         {
             var regex = new Regex("[A-Za-z0-9]", RegexOptions.Compiled);
 
@@ -67,7 +67,7 @@ namespace dotnet_regex_benchmarks
         }
 
         [Benchmark]
-        public void Regex1000000Matches()
+        public void _1Mil()
         {
             var regex = new Regex("[A-Za-z0-9]");
 
@@ -78,7 +78,7 @@ namespace dotnet_regex_benchmarks
         }
 
         [Benchmark]
-        public void Regex1000000MatchesCompiled()
+        public void _1MilCompiled()
         {
             var regex = new Regex("[A-Za-z0-9]", RegexOptions.Compiled);
 
