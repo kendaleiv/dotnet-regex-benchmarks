@@ -32,57 +32,26 @@ namespace dotnet_regex_benchmarks
             }
         }
 
-        [Benchmark]
-        public void _1()
-        {
-            new Regex("[A-Za-z0-9]").Match("abc");
-        }
+        [Params(1, 1_000, 100_000, 1_000_000)]
+        public int N;
 
         [Benchmark]
-        public void _1Compiled()
-        {
-            new Regex("[A-Za-z0-9]", RegexOptions.Compiled).Match("abc");
-        }
-
-        [Benchmark]
-        public void _1k()
+        public void Normal()
         {
             var regex = new Regex("[A-Za-z0-9]");
 
-            for (var i = 0; i < 1000; i++)
+            for (var i = 0; i < N; i++)
             {
                 regex.Match("abc");
             }
         }
 
         [Benchmark]
-        public void _1kCompiled()
+        public void Compiled()
         {
             var regex = new Regex("[A-Za-z0-9]", RegexOptions.Compiled);
 
-            for (var i = 0; i < 1000; i++)
-            {
-                regex.Match("abc");
-            }
-        }
-
-        [Benchmark]
-        public void _1Mil()
-        {
-            var regex = new Regex("[A-Za-z0-9]");
-
-            for (var i = 0; i < 1000000; i++)
-            {
-                regex.Match("abc");
-            }
-        }
-
-        [Benchmark]
-        public void _1MilCompiled()
-        {
-            var regex = new Regex("[A-Za-z0-9]", RegexOptions.Compiled);
-
-            for (var i = 0; i < 1000000; i++)
+            for (var i = 0; i < N; i++)
             {
                 regex.Match("abc");
             }
