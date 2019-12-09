@@ -1,6 +1,8 @@
 ﻿using System.Text.RegularExpressions;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Exporters;
+using BenchmarkDotNet.Exporters.Csv;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Toolchains.CsProj;
 using BenchmarkDotNet.Toolchains.DotNetCli;
@@ -24,6 +26,9 @@ namespace dotnet_regex_benchmarks
 
                 Add(Job.LegacyJitX86.With(CsProjClassicNetToolchain.Net48));
                 Add(Job.RyuJitX64.With(CsProjClassicNetToolchain.Net48));
+
+                Add(CsvMeasurementsExporter.Default);
+                Add(RPlotExporter.Default);
             }
         }
 
