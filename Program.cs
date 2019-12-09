@@ -6,7 +6,8 @@ namespace dotnet_regex_benchmarks
     {
         public static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<Benchmarks>();
+            var singleBenchmarksSummary = BenchmarkRunner.Run<SingleBenchmarks>();
+            var multipleBenchmarksSummary = BenchmarkRunner.Run<MultipleBenchmarks>();
         }
     }
 }

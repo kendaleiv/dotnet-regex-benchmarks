@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>dotnet_regex_benchmarks.MultipleBenchmarks-20191209-150802</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.0, OS=Windows 10.0.18362
+Intel Core i7-8550U CPU 1.80GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=3.1.100
+  [Host]        : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
+  .NET Core x64 : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
+  LegacyJitX86  : .NET Framework 4.8 (4.8.4042.0), X86 LegacyJIT
+  RyuJitX64     : .NET Framework 4.8 (4.8.4042.0), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>    Job</th><th>Jit</th><th>Platform</th><th>Toolchain</th><th>N</th><th>  Mean</th><th>Error</th><th>StdDev</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>Normal</td><td>.NET Core x64</td><td>RyuJit</td><td>X64</td><td>.NET Core x64</td><td>1000</td><td>159.4 us</td><td>2.91 us</td><td>2.58 us</td><td>50.2930</td><td>-</td><td>-</td><td>206.04 KB</td>
+</tr><tr><td>Compiled</td><td>.NET Core x64</td><td>RyuJit</td><td>X64</td><td>.NET Core x64</td><td>1000</td><td>1,187.2 us</td><td>8.13 us</td><td>6.79 us</td><td>52.7344</td><td>1.9531</td><td>-</td><td>215.63 KB</td>
+</tr><tr><td>Normal</td><td>LegacyJitX86</td><td>LegacyJit</td><td>X86</td><td>net48</td><td>1000</td><td>189.6 us</td><td>0.84 us</td><td>0.70 us</td><td>30.2734</td><td>-</td><td>-</td><td>124.09 KB</td>
+</tr><tr><td>Compiled</td><td>LegacyJitX86</td><td>LegacyJit</td><td>X86</td><td>net48</td><td>1000</td><td>728.0 us</td><td>5.72 us</td><td>5.07 us</td><td>31.2500</td><td>0.9766</td><td>-</td><td>130.78 KB</td>
+</tr><tr><td>Normal</td><td>RyuJitX64</td><td>RyuJit</td><td>X64</td><td>net48</td><td>1000</td><td>182.0 us</td><td>1.44 us</td><td>1.35 us</td><td>50.7813</td><td>-</td><td>-</td><td>208.09 KB</td>
+</tr><tr><td>Compiled</td><td>RyuJitX64</td><td>RyuJit</td><td>X64</td><td>net48</td><td>1000</td><td>1,222.0 us</td><td>8.46 us</td><td>7.91 us</td><td>52.7344</td><td>1.9531</td><td>-</td><td>218.27 KB</td>
+</tr><tr><td>Normal</td><td>.NET Core x64</td><td>RyuJit</td><td>X64</td><td>.NET Core x64</td><td>100000</td><td>15,514.3 us</td><td>69.23 us</td><td>61.37 us</td><td>4968.7500</td><td>-</td><td>-</td><td>20315.44 KB</td>
+</tr><tr><td>Compiled</td><td>.NET Core x64</td><td>RyuJit</td><td>X64</td><td>.NET Core x64</td><td>100000</td><td>14,102.4 us</td><td>173.97 us</td><td>162.73 us</td><td>4968.7500</td><td>-</td><td>-</td><td>20325.01 KB</td>
+</tr><tr><td>Normal</td><td>LegacyJitX86</td><td>LegacyJit</td><td>X86</td><td>net48</td><td>100000</td><td>19,042.8 us</td><td>273.93 us</td><td>242.83 us</td><td>2937.5000</td><td>-</td><td>-</td><td>12130.2 KB</td>
+</tr><tr><td>Compiled</td><td>LegacyJitX86</td><td>LegacyJit</td><td>X86</td><td>net48</td><td>100000</td><td>16,210.7 us</td><td>200.77 us</td><td>167.66 us</td><td>2937.5000</td><td>31.2500</td><td>-</td><td>12136.45 KB</td>
+</tr><tr><td>Normal</td><td>RyuJitX64</td><td>RyuJit</td><td>X64</td><td>net48</td><td>100000</td><td>17,764.6 us</td><td>108.60 us</td><td>96.27 us</td><td>4968.7500</td><td>-</td><td>-</td><td>20376.89 KB</td>
+</tr><tr><td>Compiled</td><td>RyuJitX64</td><td>RyuJit</td><td>X64</td><td>net48</td><td>100000</td><td>14,485.2 us</td><td>248.97 us</td><td>232.88 us</td><td>4968.7500</td><td>-</td><td>-</td><td>20389.75 KB</td>
+</tr><tr><td>Normal</td><td>.NET Core x64</td><td>RyuJit</td><td>X64</td><td>.NET Core x64</td><td>1000000</td><td>152,994.5 us</td><td>997.49 us</td><td>884.25 us</td><td>49666.6667</td><td>-</td><td>-</td><td>203128.35 KB</td>
+</tr><tr><td>Compiled</td><td>.NET Core x64</td><td>RyuJit</td><td>X64</td><td>.NET Core x64</td><td>1000000</td><td>129,001.7 us</td><td>2,034.83 us</td><td>1,903.38 us</td><td>49500.0000</td><td>-</td><td>-</td><td>203137.41 KB</td>
+</tr><tr><td>Normal</td><td>LegacyJitX86</td><td>LegacyJit</td><td>X86</td><td>net48</td><td>1000000</td><td>190,623.3 us</td><td>3,654.76 us</td><td>3,239.85 us</td><td>29333.3333</td><td>-</td><td>-</td><td>121276.94 KB</td>
+</tr><tr><td>Compiled</td><td>LegacyJitX86</td><td>LegacyJit</td><td>X86</td><td>net48</td><td>1000000</td><td>150,701.8 us</td><td>553.87 us</td><td>518.09 us</td><td>29500.0000</td><td>-</td><td>-</td><td>121282.28 KB</td>
+</tr><tr><td>Normal</td><td>RyuJitX64</td><td>RyuJit</td><td>X64</td><td>net48</td><td>1000000</td><td>182,966.4 us</td><td>2,580.10 us</td><td>2,413.43 us</td><td>49666.6667</td><td>-</td><td>-</td><td>203728.15 KB</td>
+</tr><tr><td>Compiled</td><td>RyuJitX64</td><td>RyuJit</td><td>X64</td><td>net48</td><td>1000000</td><td>131,543.7 us</td><td>1,604.60 us</td><td>1,339.91 us</td><td>49500.0000</td><td>-</td><td>-</td><td>203738.75 KB</td>
+</tr></tbody></table>
+</body>
+</html>
