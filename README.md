@@ -4,60 +4,59 @@
 
 ## Results
 
+``` ini
+
+BenchmarkDotNet=v0.12.0, OS=Windows 10.0.18362
+Intel Core i7-8550U CPU 1.80GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=3.1.100
+  [Host]        : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
+  .NET Core x64 : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
+  LegacyJitX86  : .NET Framework 4.8 (4.8.4042.0), X86 LegacyJIT
+  RyuJitX64     : .NET Framework 4.8 (4.8.4042.0), X64 RyuJIT
+
+
+```
+
 ### Single
 
-``` ini
+|   Method |           Job |       Jit | Platform |     Toolchain |         Mean |      Error |     StdDev |  Gen 0 |  Gen 1 | Gen 2 | Allocated |
+|--------- |-------------- |---------- |--------- |-------------- |-------------:|-----------:|-----------:|-------:|-------:|------:|----------:|
+|   Normal | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 |     1.799 us |  0.0360 us |  0.0658 us | 0.7629 |      - |     - |   3.12 KB |
+| Compiled | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 | 1,134.949 us |  6.3422 us |  5.6222 us | 1.9531 |      - |     - |  12.69 KB |
+|   Normal |  LegacyJitX86 | LegacyJit |      X86 |         net48 |     2.380 us |  0.0472 us |  0.0505 us | 0.7172 |      - |     - |   2.94 KB |
+| Compiled |  LegacyJitX86 | LegacyJit |      X86 |         net48 |   631.919 us |  9.4512 us |  8.8406 us | 1.9531 | 0.9766 |     - |   9.41 KB |
+|   Normal |     RyuJitX64 |    RyuJit |      X64 |         net48 |     2.076 us |  0.0144 us |  0.0112 us | 1.1139 |      - |     - |   4.57 KB |
+| Compiled |     RyuJitX64 |    RyuJit |      X64 |         net48 | 1,167.988 us | 22.9845 us | 34.4021 us | 1.9531 |      - |     - |  14.37 KB |
 
-BenchmarkDotNet=v0.12.0, OS=Windows 10.0.18362
-Intel Core i7-8550U CPU 1.80GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
-.NET Core SDK=3.1.100
-  [Host]        : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
-  .NET Core x64 : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
-  LegacyJitX86  : .NET Framework 4.8 (4.8.4042.0), X86 LegacyJIT
-  RyuJitX64     : .NET Framework 4.8 (4.8.4042.0), X64 RyuJIT
+### 1,000
 
+|   Method |           Job |       Jit | Platform |     Toolchain |       Mean |    Error |    StdDev |     Median |   Gen 0 |  Gen 1 | Gen 2 | Allocated |
+|--------- |-------------- |---------- |--------- |-------------- |-----------:|---------:|----------:|-----------:|--------:|-------:|------:|----------:|
+|   Normal | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 |   174.0 us |  3.47 us |   7.61 us |   171.0 us | 50.2930 |      - |     - | 206.04 KB |
+| Compiled | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 | 2,039.4 us | 40.86 us | 114.59 us | 2,038.8 us | 52.7344 | 1.9531 |     - | 215.63 KB |
+|   Normal |  LegacyJitX86 | LegacyJit |      X86 |         net48 |   282.0 us | 10.30 us |  30.06 us |   269.0 us | 30.2734 |      - |     - | 124.09 KB |
+| Compiled |  LegacyJitX86 | LegacyJit |      X86 |         net48 | 1,000.6 us | 20.06 us |  28.12 us |   999.3 us | 31.2500 |      - |     - | 130.78 KB |
+|   Normal |     RyuJitX64 |    RyuJit |      X64 |         net48 |   250.2 us |  9.52 us |  27.92 us |   256.2 us | 50.7813 |      - |     - | 208.09 KB |
+| Compiled |     RyuJitX64 |    RyuJit |      X64 |         net48 | 1,361.3 us | 25.39 us |  26.07 us | 1,369.7 us | 52.7344 | 1.9531 |     - | 218.27 KB |
 
-```
-|   Method |           Job |       Jit | Platform |     Toolchain |         Mean |      Error |     StdDev |       Median |  Gen 0 |  Gen 1 | Gen 2 | Allocated |
-|--------- |-------------- |---------- |--------- |-------------- |-------------:|-----------:|-----------:|-------------:|-------:|-------:|------:|----------:|
-|   Normal | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 |     1.693 us |  0.0189 us |  0.0158 us |     1.692 us | 0.7629 |      - |     - |   3.12 KB |
-| Compiled | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 | 1,081.061 us | 21.3221 us | 38.4481 us | 1,058.883 us | 1.9531 |      - |     - |  12.68 KB |
-|   Normal |  LegacyJitX86 | LegacyJit |      X86 |         net48 |     2.051 us |  0.0193 us |  0.0161 us |     2.047 us | 0.7172 |      - |     - |   2.94 KB |
-| Compiled |  LegacyJitX86 | LegacyJit |      X86 |         net48 |   570.049 us |  1.9102 us |  1.4913 us |   570.107 us | 1.9531 | 0.9766 |     - |   9.41 KB |
-|   Normal |     RyuJitX64 |    RyuJit |      X64 |         net48 |     1.862 us |  0.0307 us |  0.0287 us |     1.853 us | 1.1139 |      - |     - |   4.57 KB |
-| Compiled |     RyuJitX64 |    RyuJit |      X64 |         net48 | 1,086.611 us | 10.3822 us |  9.7115 us | 1,084.014 us | 1.9531 |      - |     - |  14.37 KB |
+### 100,000
 
-### Multiple
+|   Method |           Job |       Jit | Platform |     Toolchain |     Mean |    Error |   StdDev |     Gen 0 |   Gen 1 | Gen 2 | Allocated |
+|--------- |-------------- |---------- |--------- |-------------- |---------:|---------:|---------:|----------:|--------:|------:|----------:|
+|   Normal | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 | 17.08 ms | 0.341 ms | 0.466 ms | 4968.7500 |       - |     - |  19.84 MB |
+| Compiled | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 | 16.94 ms | 0.245 ms | 0.229 ms | 4968.7500 |       - |     - |  19.85 MB |
+|   Normal |  LegacyJitX86 | LegacyJit |      X86 |         net48 | 20.29 ms | 0.402 ms | 0.683 ms | 2937.5000 |       - |     - |  11.85 MB |
+| Compiled |  LegacyJitX86 | LegacyJit |      X86 |         net48 | 17.47 ms | 0.345 ms | 0.751 ms | 2937.5000 | 31.2500 |     - |  11.85 MB |
+|   Normal |     RyuJitX64 |    RyuJit |      X64 |         net48 | 19.45 ms | 0.379 ms | 0.673 ms | 4968.7500 |       - |     - |   19.9 MB |
+| Compiled |     RyuJitX64 |    RyuJit |      X64 |         net48 | 16.07 ms | 0.319 ms | 0.777 ms | 4968.7500 |       - |     - |  19.91 MB |
 
-``` ini
+### 1,000,000
 
-BenchmarkDotNet=v0.12.0, OS=Windows 10.0.18362
-Intel Core i7-8550U CPU 1.80GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
-.NET Core SDK=3.1.100
-  [Host]        : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
-  .NET Core x64 : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
-  LegacyJitX86  : .NET Framework 4.8 (4.8.4042.0), X86 LegacyJIT
-  RyuJitX64     : .NET Framework 4.8 (4.8.4042.0), X64 RyuJIT
-
-
-```
-|   Method |           Job |       Jit | Platform |     Toolchain |       N |         Mean |       Error |      StdDev |      Gen 0 |   Gen 1 | Gen 2 |    Allocated |
-|--------- |-------------- |---------- |--------- |-------------- |-------- |-------------:|------------:|------------:|-----------:|--------:|------:|-------------:|
-|   **Normal** | **.NET Core x64** |    **RyuJit** |      **X64** | **.NET Core x64** |    **1000** |     **159.4 us** |     **2.91 us** |     **2.58 us** |    **50.2930** |       **-** |     **-** |    **206.04 KB** |
-| Compiled | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 |    1000 |   1,187.2 us |     8.13 us |     6.79 us |    52.7344 |  1.9531 |     - |    215.63 KB |
-|   Normal |  LegacyJitX86 | LegacyJit |      X86 |         net48 |    1000 |     189.6 us |     0.84 us |     0.70 us |    30.2734 |       - |     - |    124.09 KB |
-| Compiled |  LegacyJitX86 | LegacyJit |      X86 |         net48 |    1000 |     728.0 us |     5.72 us |     5.07 us |    31.2500 |  0.9766 |     - |    130.78 KB |
-|   Normal |     RyuJitX64 |    RyuJit |      X64 |         net48 |    1000 |     182.0 us |     1.44 us |     1.35 us |    50.7813 |       - |     - |    208.09 KB |
-| Compiled |     RyuJitX64 |    RyuJit |      X64 |         net48 |    1000 |   1,222.0 us |     8.46 us |     7.91 us |    52.7344 |  1.9531 |     - |    218.27 KB |
-|   **Normal** | **.NET Core x64** |    **RyuJit** |      **X64** | **.NET Core x64** |  **100000** |  **15,514.3 us** |    **69.23 us** |    **61.37 us** |  **4968.7500** |       **-** |     **-** |  **20315.44 KB** |
-| Compiled | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 |  100000 |  14,102.4 us |   173.97 us |   162.73 us |  4968.7500 |       - |     - |  20325.01 KB |
-|   Normal |  LegacyJitX86 | LegacyJit |      X86 |         net48 |  100000 |  19,042.8 us |   273.93 us |   242.83 us |  2937.5000 |       - |     - |   12130.2 KB |
-| Compiled |  LegacyJitX86 | LegacyJit |      X86 |         net48 |  100000 |  16,210.7 us |   200.77 us |   167.66 us |  2937.5000 | 31.2500 |     - |  12136.45 KB |
-|   Normal |     RyuJitX64 |    RyuJit |      X64 |         net48 |  100000 |  17,764.6 us |   108.60 us |    96.27 us |  4968.7500 |       - |     - |  20376.89 KB |
-| Compiled |     RyuJitX64 |    RyuJit |      X64 |         net48 |  100000 |  14,485.2 us |   248.97 us |   232.88 us |  4968.7500 |       - |     - |  20389.75 KB |
-|   **Normal** | **.NET Core x64** |    **RyuJit** |      **X64** | **.NET Core x64** | **1000000** | **152,994.5 us** |   **997.49 us** |   **884.25 us** | **49666.6667** |       **-** |     **-** | **203128.35 KB** |
-| Compiled | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 | 1000000 | 129,001.7 us | 2,034.83 us | 1,903.38 us | 49500.0000 |       - |     - | 203137.41 KB |
-|   Normal |  LegacyJitX86 | LegacyJit |      X86 |         net48 | 1000000 | 190,623.3 us | 3,654.76 us | 3,239.85 us | 29333.3333 |       - |     - | 121276.94 KB |
-| Compiled |  LegacyJitX86 | LegacyJit |      X86 |         net48 | 1000000 | 150,701.8 us |   553.87 us |   518.09 us | 29500.0000 |       - |     - | 121282.28 KB |
-|   Normal |     RyuJitX64 |    RyuJit |      X64 |         net48 | 1000000 | 182,966.4 us | 2,580.10 us | 2,413.43 us | 49666.6667 |       - |     - | 203728.15 KB |
-| Compiled |     RyuJitX64 |    RyuJit |      X64 |         net48 | 1000000 | 131,543.7 us | 1,604.60 us | 1,339.91 us | 49500.0000 |       - |     - | 203738.75 KB |
+|   Method |           Job |       Jit | Platform |     Toolchain |     Mean |   Error |   StdDev |   Median |      Gen 0 | Gen 1 | Gen 2 | Allocated |
+|--------- |-------------- |---------- |--------- |-------------- |---------:|--------:|---------:|---------:|-----------:|------:|------:|----------:|
+|   Normal | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 | 170.3 ms | 6.86 ms |  8.17 ms | 166.6 ms | 49500.0000 |     - |     - | 198.37 MB |
+| Compiled | .NET Core x64 |    RyuJit |      X64 | .NET Core x64 | 145.0 ms | 2.86 ms |  6.50 ms | 144.0 ms | 49500.0000 |     - |     - | 198.38 MB |
+|   Normal |  LegacyJitX86 | LegacyJit |      X86 |         net48 | 203.5 ms | 4.02 ms |  6.60 ms | 202.3 ms | 29333.3333 |     - |     - | 118.43 MB |
+| Compiled |  LegacyJitX86 | LegacyJit |      X86 |         net48 | 173.8 ms | 3.36 ms |  4.93 ms | 172.5 ms | 29500.0000 |     - |     - | 118.44 MB |
+|   Normal |     RyuJitX64 |    RyuJit |      X64 |         net48 | 207.7 ms | 4.46 ms | 13.07 ms | 203.7 ms | 49666.6667 |     - |     - | 198.95 MB |
+| Compiled |     RyuJitX64 |    RyuJit |      X64 |         net48 | 141.9 ms | 1.92 ms |  1.80 ms | 142.2 ms | 49500.0000 |     - |     - | 198.96 MB |

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>dotnet_regex_benchmarks._1000-20191210-094824</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.0, OS=Windows 10.0.18362
+Intel Core i7-8550U CPU 1.80GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=3.1.100
+  [Host]        : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
+  .NET Core x64 : .NET Core 3.1.0 (CoreCLR 4.700.19.56402, CoreFX 4.700.19.56404), X64 RyuJIT
+  LegacyJitX86  : .NET Framework 4.8 (4.8.4042.0), X86 LegacyJIT
+  RyuJitX64     : .NET Framework 4.8 (4.8.4042.0), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method</th><th>    Job</th><th>Jit</th><th>Platform</th><th>Toolchain</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>Normal</td><td>.NET Core x64</td><td>RyuJit</td><td>X64</td><td>.NET Core x64</td><td>174.0 us</td><td>3.47 us</td><td>7.61 us</td><td>171.0 us</td><td>50.2930</td><td>-</td><td>-</td><td>206.04 KB</td>
+</tr><tr><td>Compiled</td><td>.NET Core x64</td><td>RyuJit</td><td>X64</td><td>.NET Core x64</td><td>2,039.4 us</td><td>40.86 us</td><td>114.59 us</td><td>2,038.8 us</td><td>52.7344</td><td>1.9531</td><td>-</td><td>215.63 KB</td>
+</tr><tr><td>Normal</td><td>LegacyJitX86</td><td>LegacyJit</td><td>X86</td><td>net48</td><td>282.0 us</td><td>10.30 us</td><td>30.06 us</td><td>269.0 us</td><td>30.2734</td><td>-</td><td>-</td><td>124.09 KB</td>
+</tr><tr><td>Compiled</td><td>LegacyJitX86</td><td>LegacyJit</td><td>X86</td><td>net48</td><td>1,000.6 us</td><td>20.06 us</td><td>28.12 us</td><td>999.3 us</td><td>31.2500</td><td>-</td><td>-</td><td>130.78 KB</td>
+</tr><tr><td>Normal</td><td>RyuJitX64</td><td>RyuJit</td><td>X64</td><td>net48</td><td>250.2 us</td><td>9.52 us</td><td>27.92 us</td><td>256.2 us</td><td>50.7813</td><td>-</td><td>-</td><td>208.09 KB</td>
+</tr><tr><td>Compiled</td><td>RyuJitX64</td><td>RyuJit</td><td>X64</td><td>net48</td><td>1,361.3 us</td><td>25.39 us</td><td>26.07 us</td><td>1,369.7 us</td><td>52.7344</td><td>1.9531</td><td>-</td><td>218.27 KB</td>
+</tr></tbody></table>
+</body>
+</html>

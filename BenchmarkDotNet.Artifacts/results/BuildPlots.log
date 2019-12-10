@@ -6,237 +6,237 @@ TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-boxplot.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-boxplot.png ***
 ------------------------------
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-barplot.png ***
-------------------------------
-TableGrob (2 x 1) "arrange": 2 grobs
-  z     cells    name              grob
-1 1 (1-1,1-1) arrange    gtable[layout]
-2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-barplot.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-facetDensity.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-facetDensity.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-facetDensity.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-.NET Core x64-timeline.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-facetDensity.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-.NET Core x64-timelineSmooth.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-.NET Core x64-timeline.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-.NET Core x64-cummean.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-.NET Core x64-timelineSmooth.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-.NET Core x64-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-.NET Core x64-cummean.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-LegacyJitX86-timeline.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-.NET Core x64-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-LegacyJitX86-timelineSmooth.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-LegacyJitX86-timeline.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-LegacyJitX86-cummean.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-LegacyJitX86-timelineSmooth.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-LegacyJitX86-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-LegacyJitX86-cummean.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-RyuJitX64-timeline.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-LegacyJitX86-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-RyuJitX64-timelineSmooth.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-RyuJitX64-timeline.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-RyuJitX64-cummean.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-RyuJitX64-timelineSmooth.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-RyuJitX64-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-RyuJitX64-cummean.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-facetTimeline.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-RyuJitX64-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-facetTimelineSmooth.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-facetTimeline.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Normal-cummean.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-facetTimelineSmooth.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Normal-cummean.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-facetDensity.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-facetDensity.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-facetDensity.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-.NET Core x64-timeline.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-facetDensity.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-.NET Core x64-timelineSmooth.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-.NET Core x64-timeline.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-.NET Core x64-cummean.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-.NET Core x64-timelineSmooth.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-.NET Core x64-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-.NET Core x64-cummean.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-LegacyJitX86-timeline.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-.NET Core x64-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-LegacyJitX86-timelineSmooth.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-LegacyJitX86-timeline.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-LegacyJitX86-cummean.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-LegacyJitX86-timelineSmooth.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-LegacyJitX86-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-LegacyJitX86-cummean.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-RyuJitX64-timeline.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-LegacyJitX86-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-RyuJitX64-timelineSmooth.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-RyuJitX64-timeline.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-RyuJitX64-cummean.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-RyuJitX64-timelineSmooth.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-RyuJitX64-density.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-RyuJitX64-cummean.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-facetTimeline.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-RyuJitX64-density.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-facetTimelineSmooth.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-facetTimeline.png ***
 ------------------------------
 TableGrob (2 x 1) "arrange": 2 grobs
   z     cells    name              grob
 1 1 (1-1,1-1) arrange    gtable[layout]
 2 2 (2-2,1-1) arrange text[GRID.text.1]
-*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks.SingleBenchmarks-Compiled-cummean.png ***
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-facetTimelineSmooth.png ***
+------------------------------
+TableGrob (2 x 1) "arrange": 2 grobs
+  z     cells    name              grob
+1 1 (1-1,1-1) arrange    gtable[layout]
+2 2 (2-2,1-1) arrange text[GRID.text.1]
+*** Plot: C:\Users\ken.dale\Documents\Projects\dotnet-regex-benchmarks\BenchmarkDotNet.Artifacts\results\dotnet_regex_benchmarks._1000000-Compiled-cummean.png ***
 ------------------------------
 
 
